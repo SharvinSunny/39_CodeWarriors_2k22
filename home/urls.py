@@ -8,5 +8,9 @@ admin.site.site_title = "Animal Rescue Portal"
 admin.site.index_title = "Welcome to Animal Rescue Portal"
 
 urlpatterns = [
-    path("", views.index, name='home')
+    path("", views.index, name='home'),
+    path('payment', views.payment, name='payment'),
+    path('regstray', views.regstray, name='regstray'),
+     path('login', views.login, name="login"),
+    path('register', views.register, name="register"),
 ]
